@@ -29,13 +29,13 @@ public class PP2Problema1 {
         return entrada.nextInt();
     }
     
-    public static boolean calcularSiB(int x) {
+    public static boolean calcularSiB(int x) {//Metodo para calcular si un año es bisiesto
         if (x%100!=0&&x%4==0){return true;
         }else{return x%100==0&&x%400==0;
     }
     }
    
-    public static void mostrarResultado(boolean x, int y) {
+    public static void mostrarResultado(boolean x, int y) { //Metodo para mostrar en pantalla si es un año es o no bisiesto
         if(x==true){
             System.out.println("El año "+y+ " es bisiesto.");
         }else{
